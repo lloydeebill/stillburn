@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+/* Define color variables */
+:root {
+  --text-color: #0a0a0a; /* rgb(10, 10, 10) - hsl(0, 0%, 4%) */
+  --background-color: #f9f9f9; /* rgb(251, 251, 254) - hsl(240, 60%, 99%) */
+  --primary-color: #62041a; /* rgb(98, 4, 26) - hsl(346, 92%, 20%) */
+  --secondary-color: #e8d311; /* rgb(232, 211, 17) - hsl(54, 86%, 49%) */
+  --accent-color: #ff914d; /* rgb(255, 145, 77) - hsl(23, 100%, 65%) */
+}
+
+/* Apply colors globally */
+body {
+  font-family: 'Inter', sans-serif; /* Applying the Inter font */
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/*NAV */
+/* Base styles for the span-wrapped letters */
+/* Base styles for the span-wrapped letters */
+.HoverAnimation_character {
+  display: inline-block;
+  transition:
+    color 0.3s ease-in-out,
+    text-shadow 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden; /* Prevent the text shadow from overflowing */
+}
+
+/* On hover, change the color of each letter and make the shine go from left to right */
+nav a:hover .HoverAnimation_character {
+  color: #ff7f50; /* Accent color or shiny effect color */
+  text-shadow:
+    -100% 0 15px rgba(255, 127, 80, 0.7),
+    100% 0 15px rgba(255, 127, 80, 0.7); /* Shine effect sweeping from left to right */
+}
+
+/* Add transition delay to stagger the animation */
+nav a:hover .HoverAnimation_character:nth-child(1) {
+  transition-delay: 0ms;
+}
+
+nav a:hover .HoverAnimation_character:nth-child(2) {
+  transition-delay: 50ms;
+}
+
+nav a:hover .HoverAnimation_character:nth-child(3) {
+  transition-delay: 100ms;
+}
+
+nav a:hover .HoverAnimation_character:nth-child(4) {
+  transition-delay: 150ms;
+}
+
+nav a:hover .HoverAnimation_character:nth-child(5) {
+  transition-delay: 200ms;
+}
+
+nav a:hover .HoverAnimation_character:nth-child(6) {
+  transition-delay: 250ms;
+}
+
+nav a:hover .HoverAnimation_character:nth-child(7) {
+  transition-delay: 300ms;
+}
+
+.header {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+/* Add more custom styles as needed */
