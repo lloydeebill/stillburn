@@ -66,9 +66,9 @@ body {
 /* Define color variables */
 :root {
   --text-color: #0a0a0a; /* rgb(10, 10, 10) - hsl(0, 0%, 4%) */
-  --background-color: #f9f9f9; /* rgb(251, 251, 254) - hsl(240, 60%, 99%) */
+  --background-color: #fbfbfe; /* rgb(251, 251, 254) - hsl(240, 60%, 99%) */
   --primary-color: #62041a; /* rgb(98, 4, 26) - hsl(346, 92%, 20%) */
-  --secondary-color: #e8d311; /* rgb(232, 211, 17) - hsl(54, 86%, 49%) */
+  --secondary-color: #ffde59; /* rgb(232, 211, 17) - hsl(54, 86%, 49%) */
   --accent-color: #ff914d; /* rgb(255, 145, 77) - hsl(23, 100%, 65%) */
 }
 

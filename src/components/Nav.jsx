@@ -20,7 +20,7 @@ function Nav() {
   return (
     <div className="flex items-center justify-between mx-10 my-10 px-5">
       {/* Logo Section */}
-      <h1 className="text-xs sm:text-xl md:text-2xl text-primary-color font-bold">
+      <h1 className="text-xs sm:text-xl md:text-2xl text-text-color font-semibold">
         StillBurn Global
       </h1>
       {/* <img src={logo} alt="Logo" className="w-20 h-auto" /> */}
@@ -28,19 +28,19 @@ function Nav() {
       {/* Navigation Links and Button Section */}
       <div className="flex items-center">
         {/* Navigation Links */}
-        <nav className="flex space-x-4 md:space-x-12 text-xs sm:text-xl md:text-2xl font-semibold">
+        <nav className="flex justify-end space-x-2 md:space-x-10 text-xs md:text-2xl ">
           {/* Using Link from react-router-dom instead of <a> */}
           <Link to="/service" className="text-text-color">
-            SERVICE
+            Features
           </Link>
           <Link to="/project" className="text-text-color">
-            PROJECT
+            Works
           </Link>
           <Link to="/about" className="text-text-color">
-            ABOUT
+            Team
           </Link>
           <Link to="/contact" className="text-text-color">
-            CONTACT
+            Connect
           </Link>
         </nav>
       </div>
