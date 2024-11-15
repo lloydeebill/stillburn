@@ -18,30 +18,20 @@ function Nav() {
   }, []); // Empty dependency array ensures this runs only once on mount
 
   return (
-    <div className="flex items-center justify-between mx-10 my-10 px-5">
+    <div className="flex items-center justify-between mx-10 my-10 px-5 text-primary-color">
       {/* Logo Section */}
-      <h1 className="text-xs sm:text-xl md:text-2xl text-text-color font-semibold">
-        StillBurn Global
-      </h1>
+      <h1 className="text-base sm:text-xl">Stillburn Global</h1>
       {/* <img src={logo} alt="Logo" className="w-20 h-auto" /> */}
 
       {/* Navigation Links and Button Section */}
       <div className="flex items-center">
         {/* Navigation Links */}
-        <nav className="flex justify-end space-x-2 md:space-x-10 text-xs md:text-2xl ">
+        <nav className="flex items-center justify-end space-x-2 mt-2 md:space-x-10 text-xs md:text-xl ">
           {/* Using Link from react-router-dom instead of <a> */}
-          <Link to="/service" className="text-text-color">
-            Features
-          </Link>
-          <Link to="/project" className="text-text-color">
-            Works
-          </Link>
-          <Link to="/about" className="text-text-color">
-            Team
-          </Link>
-          <Link to="/contact" className="text-text-color">
-            Connect
-          </Link>
+          <Link to="/service">Service</Link>
+          <Link to="/project">Works</Link>
+          <Link to="/about">Team</Link>
+          <Link to="/contact">Connect</Link>
         </nav>
       </div>
     </div>

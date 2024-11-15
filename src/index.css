@@ -65,11 +65,10 @@ body {
 
 /* Define color variables */
 :root {
-  --text-color: #0a0a0a; /* rgb(10, 10, 10) - hsl(0, 0%, 4%) */
   --background-color: #fbfbfe; /* rgb(251, 251, 254) - hsl(240, 60%, 99%) */
   --primary-color: #62041a; /* rgb(98, 4, 26) - hsl(346, 92%, 20%) */
-  --secondary-color: #ffde59; /* rgb(232, 211, 17) - hsl(54, 86%, 49%) */
-  --accent-color: #ff914d; /* rgb(255, 145, 77) - hsl(23, 100%, 65%) */
+  --secondary-color: #ffd900; /* rgb(232, 211, 17) - hsl(54, 86%, 49%) */
+  --accent-color: #ff6709; /* rgb(255, 145, 77) - hsl(23, 100%, 65%) */
 }
 
 /* Apply colors globally */
@@ -93,7 +92,7 @@ body {
 
 /* On hover, change the color of each letter and make the shine go from left to right */
 nav a:hover .HoverAnimation_character {
-  color: #ff7f50; /* Accent color or shiny effect color */
+  color: var(--accent-color); /* Accent color or shiny effect color */
   text-shadow:
     -100% 0 15px rgba(255, 127, 80, 0.7),
     100% 0 15px rgba(255, 127, 80, 0.7); /* Shine effect sweeping from left to right */
@@ -129,8 +128,8 @@ nav a:hover .HoverAnimation_character:nth-child(7) {
 }
 
 .header {
-  background-color: var(--secondary-color);
-  color: var(--text-color);
+  background-color: var(--background-color);
+  color: var(--primary-color);
 }
 
 /* Add more custom styles as needed */
