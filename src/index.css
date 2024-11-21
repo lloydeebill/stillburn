@@ -65,10 +65,10 @@ body {
 
 /* Define color variables */
 :root {
-  --background-color: #fbfbfe; /* rgb(251, 251, 254) - hsl(240, 60%, 99%) */
-  --primary-color: #62041a; /* rgb(98, 4, 26) - hsl(346, 92%, 20%) */
-  --secondary-color: #ffd900; /* rgb(232, 211, 17) - hsl(54, 86%, 49%) */
-  --accent-color: #ff6709; /* rgb(255, 145, 77) - hsl(23, 100%, 65%) */
+  --background-color: #000000;
+  --primary-color: #6a0dad;
+  --secondary-color: #e94b9b;
+  --accent-color: #c0c0c0;
 }
 
 /* Apply colors globally */
@@ -92,10 +92,10 @@ body {
 
 /* On hover, change the color of each letter and make the shine go from left to right */
 nav a:hover .HoverAnimation_character {
-  color: var(--accent-color); /* Accent color or shiny effect color */
+  color: var(--secondary-color); /* Accent color or shiny effect color */
   text-shadow:
-    -100% 0 15px rgba(255, 127, 80, 0.7),
-    100% 0 15px rgba(255, 127, 80, 0.7); /* Shine effect sweeping from left to right */
+    -100% 0 15px rgba(10, 3, 1, 0.7),
+    100% 0 15px rgba(12, 4, 1, 0.7); /* Shine effect sweeping from left to right */
 }
 
 /* Add transition delay to stagger the animation */
@@ -132,4 +132,29 @@ nav a:hover .HoverAnimation_character:nth-child(7) {
   color: var(--primary-color);
 }
 
-/* Add more custom styles as needed */
+/* Style for the animated gradient text */
+.animated-gradient {
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--accent-color)
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 3s ease infinite;
+}
+
+/* Animation for the gradient */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

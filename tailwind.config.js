@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        'text-color': '#0a0a0a',
-        'background-color': '#fbfbfe',
-        'primary-color': '#62041a',
-        'secondary-color': '#e8d311',
-        'accent-color': '#ff914d',
+        'text-color': '#0a0a0a', // Text color
+        'background-color': '#fbfbfe', // Background color
+        'primary-color': '#6a0dad', // Stellar theme's primary color
+        'secondary-color': '#e94b9b', // Secondary color
+        'accent-color': '#c0c0c0', // Accent color
       },
     },
   },
